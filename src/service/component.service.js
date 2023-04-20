@@ -1,4 +1,4 @@
-class ComponentService {
+export class ComponentService {
 
     constructor() {
         this.priceInput = document.getElementById('product-price');

@@ -1,4 +1,10 @@
-const app = () => {
+
+import { ComponentService } from "../service/component.service";
+import { ErrorService } from "../service/error.service";
+import { parseInput } from "../utils/parse-input";
+import { validateInputs } from "../utils/validate-Inputs";
+
+export const app = () => {
     const componentService = new ComponentService();
     const errorService = new ErrorService();
 
@@ -22,4 +28,4 @@ const app = () => {
     componentService.onClick(calTotal);
 };
 
-app();
+// app();
